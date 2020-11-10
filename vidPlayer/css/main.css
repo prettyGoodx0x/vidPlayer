@@ -1,0 +1,127 @@
+
+body {
+    padding: 2em 7em;
+    background: #222;
+}
+
+    #vidbox {
+        margin: 0 auto;
+        background: #000;
+        border: solid .1em #999;
+        display: flex;
+        flex-direction: column;
+        width: 83%;
+    }
+
+    @media screen and (max-width: 980px) {
+        #vidbox {
+            width: 430px;
+        }
+    }
+    
+    @media screen and (max-width: 980px) {
+        #vid {
+            width: 400px;
+        }
+    }
+
+    #vid {
+        margin: .5em;
+        padding: .5em;
+        background: #010;
+        border: solid .1em lime;
+        height: 600px;
+    }
+    @media screen and (max-width: 980px) {
+        #ctrl {
+            width: 300px;
+        }
+    }
+
+    #ctrl {
+        background: #012;
+        margin: .2em 5em;
+        max-height: 1.1em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #vol {
+        background: #555;
+        height: 1px;
+        margin: 2% 0;
+        width: 33%;
+    }
+
+    #mute {
+        width: 2.5em;
+        padding: .3em;
+        color: #444;
+        outline: none;
+        background: #222;
+        font: .8em/1 Nueva;
+        text-align: center;
+    }
+
+    #current {
+        background: #111;
+        position: sticky;
+        left: -1em;
+        font: 1em/1 Nueva;
+        text-align: center;
+    }
+    #fulls {
+        width: 3.5em;
+        font: .8em/1 Nueva;
+        text-align: center;
+        background: #222;
+    }
+    #duration {
+        width: 2em;
+        padding: .2em;
+        background: #111;
+        font: .8em/1 Nueva;
+        text-align: center;
+    }
+
+    #seekbar {
+        height: .5em;
+        border: solid 1px #777;
+        background: #222;
+    }
+    i {
+        color: #999;
+        background: #222;
+        padding: .3em;
+        margin: 0;
+        /* outline: none; */
+        border: solid 1px #444;
+        font: 1em/1 Nueva;
+    }
+
+    .other {
+        background: #700;
+        color: #777;
+        border: none;
+        outline: none;
+        padding: 0;
+    }
+    .slider {
+        -webkit-appearance: none;
+        outline: none;
+        position: static;
+        left: 2em;
+    }
+    .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 1em;
+        height: .5em;
+        line-height: .1em;
+        background: #07f;
+        /* background: no-repeat url(css/bla.png); */
+    }
+
+
+    

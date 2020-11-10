@@ -1,0 +1,37 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <script src="https://kit.fontawesome.com/7a26f261ea.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./css/main.css">
+        <script src="./js/jquery-3.5.0.min.js"></script> 
+    </head>
+    <body>
+
+    <div id="vidbox">
+        <video id="vid" src="./vid/SaBo-FX Impulse  Vimeo.mp4"></video>
+        <div id="ctrl">
+            <span>
+                <button id="playpause" class="other"><i class="fa fa-play"></i></button>
+                <button id="stop" class="other"><i class="fa fa-stop"></i></button>
+            </span>
+            <input id="mute" value="mute" class="other">
+            <input id="vol" type="range" max="1" step="any" class="slider fa fa-pinterest">
+                <span>
+                    <button id="fastrwd" class="other"><i class="fa fa-fast-backward"></i></button>
+                    <button id="rev" class="other"><i class="fa fa-backward"></i></button>
+                    <button id="fwd" class="other"><i class="fa fa-forward"></i></button>
+                    <button id="fastfwd" class="other"><i class="fa fa-fast-forward"></i></button>
+                </span>
+            <input id="fulls" type="button" value="screen" class="other">
+            <span id="current" class="other"></span>
+            <span id="duration" class="other">00:00</span>
+        </div>
+        <input type="range" step="any" id="seekbar" class="slider fa fa-bolt">
+    </div>
+
+    <script src="app.js" type="module"></script>
+
+    </body>
+    </html>
